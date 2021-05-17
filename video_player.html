@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title> My model of youtube</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function myFunction(im) {
+                var image=document.getElementById(im)
+                if(image.style.color=="blanchedalmond")
+                    image.style="color:aqua;";
+                else{
+                    image.style="color:blanchedalmond;";
+                }
+    }</script>
+    <link rel="stylesheet" href="../templates/player.css">
+    </head>
+    <body style="background-color: black; color:blanchedalmond">
+            <nav class="navbar navbar-inverse" style="height:10px; ">
+                <div class="container-fluid">
+                    <div class="navbar-header" style="float:left;">
+                        <a href="#"><span style="color:white" class="glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#vtab"></span></a>
+                        <a  href="#"><img src="../images/youtube_logo.PNG"></a>
+                    </div>
+                    <div id="text_area" style="float:left; margin-left: 300px;">
+                        <input type="text" name="search" placeholder="Search" style="padding-left: 200px;margin-top: 5px;"><span style="color:white"class="glyphicon glyphicon-search"></span></input>
+                    </div>
+                    <ul class="nav navbar-nav" style="float:right;">
+                        <li><a href="upload.html"><span class="glyphicon glyphicon-facetime-video"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-th"></span></a></li>
+                        <li><a href="sign_in.html"><img src="../images/sign_in.png" sizes style="border: 1px solid #ddd;
+                            border-radius: 4px;
+                            width: 80px;border-radius: 8px;"></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <hr> 
+        <!-- creating the left dropping menu-->
+        <div class="tab" id="vtab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><span class="glyphicon glyphicon-home" style="margin-right: 5px;"></span>Home</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')"><span class="glyphicon glyphicon-search" style="margin-right: 5px;"></span>Explore</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-folder-open" style="margin-right: 5px;"></span>Subscription</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-book" style="margin-right: 5px;"></span>Library</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-repeat" style="margin-right: 5px;"></span>History</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-expand" style="margin-right: 5px;"></span>Your Videos</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-time" style="margin-right: 5px;"></span>Watch Later</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></span>Liked Videos</button>
+            <hr>
+            <h3 style="text-align: left;">Subscription</h2>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Sony Sab</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Sony Pal</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Cany Jo</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Technical Vechnical</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Zee Bangla</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Nisha Malik</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-circle-arrow-right" style="margin-right: 5px;"></span>Neso Academy</button>
+            <hr>
+            <h3 style="text-align: left;">More from Youtube</h2>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-expand" style="margin-right: 5px;"></span>Youtube Premium</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-film" style="margin-right: 5px;"></span>Movies</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-heart" style="margin-right: 5px;"></span>Gaming</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-user" style="margin-right: 5px;"></span>Live</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-ok" style="margin-right: 5px;"></span>Fashion & Beauty</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-info-sign" style="margin-right: 5px;"></span>Learning</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-screenshot" style="margin-right: 5px;"></span>Sports</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-cog" style="margin-right: 5px;"></span>Settings</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-flag" style="margin-right: 5px;"></span>Report History</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-question-sign" style="margin-right: 5px;"></span>Help</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><span class="glyphicon glyphicon-comment" style="margin-right: 5px;"></span>Send Feedback</button>
+            <hr>
+            <p>About Press Copyright Contact us Creators Advertise Developers<br>
+                Terms Privacy Policy & Safety How YouTube works? <br>
+                Test new features<br>
+                © 2021 Google LLC</p>
+        </div> 
+        <div style="float:left;">
+        <video width="800" controls >
+            <source src="../images/video.mp4" type="video/mp4">
+        </video>
+            <div>
+                <h3 style="margin-top:5px; margin-left: 50px;">Title for video</h3>
+                <div id="views" style="float: left;margin-left:50px;">1,739,461 views</div>
+                <div id="date"style="float: left;margin-left:10px;">Jan 9, 2014</div>
+                <div id="like"style="float: left; margin-left:300px;">
+                <i onclick="myFunction(this.id)" class="fa fa-thumbs-up" id="thumbs_up"></i>
+                <i onclick="myFunction(this.id)" class="fa fa-thumbs-down" id="thumbs_down"></i>
+                </div>
+            </div>
+        </div>
+        <div style="float: right;">
+            <div style="float:left; height:150px;width:150px;"></div>
+                <img src="../images/img1.jpg" alt="Cinque Terre"style="height:100px; width:100px;"style="float:left;"><br>
+                <div id="info" style="float:right;">
+                <img src="../images/Sony_SAB.png" style="height: 30px; width:30px; float:left;margin-top: 5px;">
+                <h5 id="title" style="float: left;margin-top:10px;margin-left: 2px;margin-bottom: 0px;"><p>Maddam Sir-Ep 95 Full Episode- 21st October 2020</p></h5>
+                <h6 id="Channel name" style="margin-top:0px;"><p>Sony Sab</p></h6><h6 id="popularity" style="margin-top:0px;margin-left: 10px;"><p>1M views</p></h6>
+            </div>
+        </div>
+        <div style="float: right;">
+            <div style="float:left; height:150px;width:150px;"></div>
+                <img src="../images/img2.jpg" alt="Cinque Terre"style="height:100px; width:100px;"style="float:left;"><br>
+                <div id="info" style="float:right;">
+                <img src="../images/Sony_SAB.png" style="height: 30px; width:30px; float:left;margin-top: 5px;">
+                <h5 id="title" style="float: left;margin-top:10px;margin-left: 2px;margin-bottom: 0px;"><p>Goli ne khaya Allergic Food</p></h5>
+                <h6 id="Channel name" style="margin-top:0px;"><p>Sony Sab</p></h6><h6 id="popularity" style="margin-top:0px;margin-left: 10px;"><p>0.5M views</p></h6>
+            </div>
+        </div>
+        <div style="float: right;">
+            <div style="float:left; height:150px;width:150px;"></div>
+                <img src="../images/img3.jpg" alt="Cinque Terre"style="height:100px; width:100px;"style="float:left;"><br>
+                <div id="info" style="float:right;">
+                <img src="../images/Sony_SAB.png" style="height: 30px; width:30px; float:left;margin-top: 5px;">
+                <h5 id="title" style="float: left;margin-top:10px;margin-left: 2px;margin-bottom: 0px;"><p>Connecting to Database</p></h5>
+                <h6 id="Channel name" style="margin-top:0px;"><p>Code with Harry</p></h6><h6 id="popularity" style="margin-top:0px;margin-left: 10px;"><p>1K views</p></h6>
+            </div>
+        </div>
+        <div style="float: right;">
+            <div style="float:left; height:150px;width:150px;"></div>
+                <img src="../images/img4.jpg" alt="Cinque Terre"style="height:100px; width:100px;"style="float:left;"><br>
+                <div id="info" style="float:right;">
+                <img src="../images/Sony_SAB.png" style="height: 30px; width:30px; float:left;margin-top: 5px;">
+                <h5 id="title" style="float: left;margin-top:10px;margin-left: 2px;margin-bottom: 0px;"><p>#Cricket CountDown Bhuvi the King</p></h5>
+                <h6 id="Channel name" style="margin-top:0px;"><p>Star Sports</p></h6><h6 id="popularity" style="margin-top:0px;margin-left: 10px;"><p>1.5M views</p></h6>
+            </div>
+        </div>
+        <div style="float: right;">
+            <div style="float:left; height:150px;width:150px;"></div>
+                <img src="../images/img5.jpg" alt="Cinque Terre"style="height:100px; width:100px;"style="float:left;"><br>
+                <div id="info" style="float:right;">
+                <img src="../images/Sony_SAB.png" style="height: 30px; width:30px; float:left;margin-top: 5px;">
+                <h5 id="title" style="float: left;margin-top:10px;margin-left: 2px;margin-bottom: 0px;"><p>Iron Max x Waharan Status Video</p></h5>
+                <h6 id="Channel name" style="margin-top:0px;"><p>Marvel</p></h6><h6 id="popularity" style="margin-top:0px;margin-left: 10px;"><p>2.5M views</p></h6>
+            </div>
+        </div>
+    </body>
+</html>
